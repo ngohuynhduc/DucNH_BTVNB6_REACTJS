@@ -1,0 +1,20 @@
+Câu 1:
+    1: let a = "" + 1 + 0 // "10" kiểu string vì string + number 1 và 0 -> convert sang string.
+    2: let a2 = "" - 1 + 0 // -1 kiểu number vì toán tử "-" convert -> number. 
+    3: let a3 = true + false // 1 kiểu number vì true =1, false =0.
+    4: let a4 = 6 / "3" // 2 kiểu number vì "\" -> convert "3" thành number.
+    5: let a5 = "4" * "2" // 8 kiểu number vì convert "4" với "2" sang number.
+    6: let a6 = 4 + 2 + 'px' // "6px" kiểu string vì 4 (number) + 2 (number) = 6 (number), sau đó + 'px' (string) -> convert sang string.
+    7: let a7 = "4" - 2 // 2 kiểu number vì convert "4" sang number.
+    8: let a8 = "4px" - 2 //  NaN vì "4px" là một chuỗi,trong phép trừ này không thể convert sang number.
+    9: let a9 = "    -10     " + 5 // "    -10     5" kiểu string vì string + number -> convert sang string.
+    10: let a10 = " -10 " - 5 //  -15 kiểu number vì convert " -10 " sang number.
+    11: null + 1 = // 1 kiểu number vì null rỗng nên rỗng + 1 = 1.
+    12: undefined + 1 = // NaN vì không thể convert biến chưa được khởi tạo undefined.
+    13: let a10 = "\n \t " - 4 // -4 kiểu number vì "\n" "\t" dùng để xuống dòng và tab, sau đó convert sang number; 
+Bài 2: nhé cả nhà
+        let c = null || 2 || undefined; // c = 2 vì undefined là chưa được khởi tạo và null là giá trị rỗng nên c sẽ lấy giá trị được khởi tạo là 2. 
+        alert(alert(2) || alert(1)) // alert =2; alert =1; alert = undefined vì alert(alert2) =2; alert(alert 1)=1; alert(alert (2||1)) = undefined;
+        if(-1 || 0 ) alert('first');
+        if(null || -1) alert('second') // alert naò sẽ được thực thi tại sao và giá trị trong if
+	// cả hai đều được thực thi vì...em đoán là giá trị trong cả 2 if đều là true :D.
